@@ -35,7 +35,11 @@ def analysis_html html
     
     time = Time.now if info[1].include?("前")
     
-    return false if time < Time.at(Time.now.to_i - 3600*24*1)
+    #return false if time < Time.at(Time.now.to_i - 3600*24*1)
+    if time < Time.at(Time.now.to_i - 3600*24*1)
+      return false
+     
+    end
 
 
     puts "类型：新闻"
