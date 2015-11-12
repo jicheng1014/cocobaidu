@@ -54,6 +54,7 @@ end
 
 items = %w(李晨 阮经天 孙红雷)
 
+puts "脚本运行于#{Time.now}"
 
 items.each do |item|
   current = 0
